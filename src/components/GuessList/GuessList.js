@@ -5,8 +5,10 @@ function GuessList({ guessList }) {
 
   return (
   <div className='guess-results'>
-   {guessList.map((guess) => {
-return <p className='guess' key={Math.random()}>{guess}</p>;
+   {guessList.map((word) => {
+    const key = Math.random();
+    console.log("Key:", key);
+return <p className='guess' key={key}>{word}</p>;
    })}
   </div>
   );
