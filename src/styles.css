@@ -31,7 +31,7 @@ body {
   }
 }
 
-label {
+label, p, #hintBtn {
   color: rgb(182, 182, 182);
 }
 

@@ -231,6 +231,8 @@ export const WORDS = [
   'FALSE',
   'INDEX',
   'BUNCH',
+  'REPLY',
+  'LOGIC',
 
 
 ];
