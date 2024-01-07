@@ -12,7 +12,7 @@ function Guess({ answer, wordsToPrint, guessStatuses, setDisableInput }) {
     <Hint 
     answer={answer} 
     />
-    {/*The range-function is used to generate an array of numbers. The range functions decide how many times to map, in order to be able to print all the necessary element for the whole gameboard regardless of how many guesses have been submitted (print empty rows too) */}
+    {/*The range-function generateS an array of numbers. The range functions decide how many times to map, in order to be able to print all the necessary element for the whole gameboard regardless of how many guesses have been submitted (print empty rows too) */}
   {range(NUM_OF_GUESSES_ALLOWED).map((rowIndex) => (
   <p className='guess' key={rowIndex}>
 {range(5).map((cellIndex) => {

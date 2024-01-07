@@ -15,7 +15,7 @@ function HintLogic({ answer }) {
      <p className='guess'>
       {answer.split('').map((letter, index) => (
           <span className='cell' key={index} style={{ backgroundColor: 'rgb(100, 100, 100)', color: 'white' }}>
-           {index === letterIndex ? hintLetter : ''}
+           {index === letterIndex ? hintLetter : '⁕'}
           </span>
       ))}
       </p>

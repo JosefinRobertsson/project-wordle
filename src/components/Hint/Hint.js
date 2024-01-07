@@ -5,7 +5,6 @@ function Hint({ answer }) {
   const [clickCount, setClickCount] = React.useState(0);
 
   const showHint = () =>{
-
       setClickCount((prevCount) => (prevCount === 0 ? 1 : 0));
   };
 
