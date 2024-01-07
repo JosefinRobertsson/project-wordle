@@ -7,12 +7,11 @@ function Hint({ answer }) {
   const showHint = () =>{
 
       setClickCount((prevCount) => (prevCount === 0 ? 1 : 0));
-      console.log({ clickCount });
   };
 
   return (
     <>
-    <button id="hintBtn" onClick={showHint} style={{ visibility: clickCount === 0 ? 'visible' : 'hidden' }}>I need a hint</button>
+    <button className='extraBtn' onClick={showHint} style={{ visibility: clickCount === 0 ? 'visible' : 'hidden' }}>Let's make it easier</button>
     {clickCount === 1 && 
     <HintLogic answer={answer}
     /> }

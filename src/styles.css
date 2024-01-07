@@ -31,7 +31,7 @@ body {
   }
 }
 
-label, p, #hintBtn {
+label, p, .extraBtn {
   color: rgb(182, 182, 182);
 }
 
