@@ -31,8 +31,12 @@ body {
   }
 }
 
-label, p, .extraBtn {
+label, p {
   color: rgb(182, 182, 182);
+}
+
+.happy.banner p, .extraBtn {
+  color: white;
 }
 
 button {
