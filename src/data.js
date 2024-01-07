@@ -225,6 +225,12 @@ export const WORDS = [
   'ISSUE',
   'LOCAL',
   'VIPER',
+  'EVERY',
+  'START',
+  'CLONE',
+  'FALSE',
+  'INDEX',
+  'BUNCH',
 
 
 ];
