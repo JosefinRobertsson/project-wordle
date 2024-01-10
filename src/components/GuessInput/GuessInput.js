@@ -21,6 +21,7 @@ function GuessInput({ guessList, setGuessList, disableInput }) {
     id='guess-input'
     pattern="[A-Za-z]{5}" //accept no less than 5 letters
     title="5 letters"
+    minLength={5}
     maxLength={5}
     value={guess}
     onChange={event => {
