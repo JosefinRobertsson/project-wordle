@@ -6,7 +6,7 @@ function NewGameButton() {
     window.location.reload();
   }
   return (
-  <button onClick={restartGame} className='extraBtn'>New Game</button>
+    <button onClick={restartGame} className='extraBtn'>New Game</button>
   )
 }
 
