@@ -10,6 +10,7 @@ function Guess({ answer, wordsToPrint, guessStatuses, setDisableInput }) {
 <>
   <div className='guess-results'>
     <Hint 
+    wordsToPrint={wordsToPrint}
     answer={answer} 
     />
     {/*The range-function generateS an array of numbers. The range functions decide how many times to map, in order to be able to print all the necessary element for the whole gameboard regardless of how many guesses have been submitted (print empty rows too) */}
