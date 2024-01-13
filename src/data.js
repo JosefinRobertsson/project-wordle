@@ -445,6 +445,7 @@ export const WORDS = [
   'RELAX',
   'FUDGE',
   'OVERT',
-
+  'ARGUE',
+  'LLAMA',
 
 ];

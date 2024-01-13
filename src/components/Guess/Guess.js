@@ -1,10 +1,9 @@
 import React from 'react';
 import { range } from '../../utils';
 import { NUM_OF_GUESSES_ALLOWED } from '../../constants';
-import Banner from '../Banner';
 import Hint from '../Hint';
 
-function Guess({ answer, wordsToPrint, guessStatuses, setDisableInput }) {
+function Guess({ answer, wordsToPrint, guessStatuses }) {
 
   return (
     <>
@@ -29,11 +28,6 @@ function Guess({ answer, wordsToPrint, guessStatuses, setDisableInput }) {
         ))}
       </div>;
 
-      <Banner
-        answer={answer}
-        wordsToPrint={wordsToPrint}
-        guessStatuses={guessStatuses}
-        setDisableInput={setDisableInput} />
     </>
   );
 };

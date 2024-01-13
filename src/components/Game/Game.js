@@ -4,6 +4,7 @@ import { sample } from '../../utils';
 import { WORDS } from '../../data';
 import GuessInput from '../GuessInput'
 import Guess from '../Guess';
+import Banner from '../Banner';
 import { checkGuess } from '../../game-helpers';
 
 // Pick a random word on every pageload.
@@ -17,7 +18,7 @@ function Game() {
   const guessStatuses = guessList.map(word => checkGuess(word, answer)); //compare guess to answer and apply statuses to letters
 
   return (
-    <>
+    <> 
       <Guess
         answer={answer}
         wordsToPrint={guessList}
@@ -25,10 +26,15 @@ function Game() {
         setDisableInput={setDisableInput}
       />
       <GuessInput
-        guessList={guessList}
-        setGuessList={setGuessList}
-        disableInput={disableInput}
-      />
+    guessList={guessList}
+    setGuessList={setGuessList}
+    disableInput={disableInput}
+  />
+     <Banner
+        answer={answer}
+        wordsToPrint={guessList}
+        guessStatuses={guessStatuses}
+        setDisableInput={setDisableInput} />
     </>
   );
 }
