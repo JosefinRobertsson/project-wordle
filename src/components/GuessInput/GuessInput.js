@@ -5,12 +5,6 @@ function GuessInput({ guessList, setGuessList, disableInput }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Check if the device is a probable mobile devide (by checking screen width). If so do a length-check. Nether pattern nor minLength/maxLength helps to prevent empty input field submits on mobile phones.
-    const isMobile = window.innerWidth < 800;
-    if (isMobile && guess.length !== 5) {
-      window.alert('please make a 5 letter guess 😊')
-      return;
-    }
     const nextList = [...guessList, guess]; //create new array with the old words + the new submitted word
     setGuessList(nextList); //set guessList to be the new array
     setGuess(''); // clear input field
@@ -24,6 +18,7 @@ function GuessInput({ guessList, setGuessList, disableInput }) {
       <label htmlFor='guess-input'>Enter guess:</label>
       <input
         type='text'
+        required={true}
         disabled={disableInput} //disable when game is over
         id='guess-input'
         pattern="[A-Za-z]{5}" //accept no less than 5 letters
