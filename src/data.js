@@ -181,7 +181,6 @@ export const WORDS = [
   'HAVEN',
   'HEDGE',
   'HIPPO',
-  'HUMUS',
   'CATCH',
   'OFFER',
   'ONION',
@@ -492,5 +491,9 @@ export const WORDS = [
   'FUNNY',
   'SPILL',
   'BEING',
+  'TOAST',
+  'OLIVE',
+  'CRISP',
+  'VOICE',
 
 ];
